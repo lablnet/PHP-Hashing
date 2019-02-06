@@ -1,4 +1,5 @@
 
+
 # PHP Hashing
 This Package  provides secure Bcrypt and Argon2 hashing for storing user passwords.
 
@@ -51,6 +52,9 @@ $password_hash = $hashing->make($password, [
     'threads' => 2,
 ]);
 ```
+
+> For more information on these options, check out the  [official PHP documentation](https://secure.php.net/manual/en/function.password-hash.php).
+> 
 ### Verifying A Password Against A Hash
 The `verify` method allows you to verify that a given plain-text string corresponds to a given hash
 ```php
