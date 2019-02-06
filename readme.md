@@ -32,7 +32,7 @@ $password_hash = $hashing->make($password);
 echo $password_hash;
 ```
 ### Adjusting The Bcrypt Work Factor
-If you are using the Bcrypt algorithm, the `make` method allows you to manage the work factor of the algorithm using the  rounds option:
+If you are using the Bcrypt algorithm, the `make` method allows you to manage the work factor of the algorithm using the  cost option:
 
 ```php
 $hashing = new Hashing('bcrypt');
